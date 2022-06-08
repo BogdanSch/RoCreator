@@ -61,13 +61,11 @@ a.active{
 a.center-align{
 	margin: 0 auto;
 }
-
 .content{
 	max-width: 55%;
 	margin: 40px auto;
 	text-align: center;
 }
-
 .content p{
 	margin-bottom: 30px;
 }
@@ -98,20 +96,24 @@ a.center-align{
     border-radius: 20px;
 	padding: 10px 50px;
 }
-
 .btn--play:hover{
 	background-color: rgb(47, 0, 255);
 	border-radius: 10px;
 }
-
 .btn--play.unfinished:hover{
 	background-color: rgb(255, 0, 0);
 	border-radius: 10px;
 }
-
 .col-img{
 	width: 40%;
 	align-self: center;
+}
+.introduction{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 90px;
+	margin-top: 90px;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -235,14 +237,6 @@ main{
 /* About - End */
 
 /* Games - Start */
-.games__introduction{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-bottom: 90px;
-	margin-top: 90px;
-}
-
 .games .text h2{
     text-align: center;
 }
@@ -305,13 +299,6 @@ main{
 /* Games - End */
 
 /* Software - Start */
-.software__introduction{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-bottom: 90px;
-	margin-top: 90px;
-}
 
 .software .text h2{
     text-align: center;
@@ -414,6 +401,9 @@ footer p{
 	}
 	.btn--play, .btn--more{
 		padding: 6px 30px;
+	}	
+	.introduction{
+		flex-direction: column;
 	}
 	.games__img{
 		width: 50%;
