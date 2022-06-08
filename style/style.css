@@ -8,17 +8,14 @@
 }
 
 body{
-	/* font-family: 'Roboto', sans-serif; */
 	font-family: 'Montserrat', sans-serif;
 	overflow-x: hidden;
 }
-
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 10px 20px;
 }
-
 .card{
     background: transparent;
     border: none;
@@ -34,30 +31,24 @@ p{
     line-height: 160%;
     font-size: 16px;
 }
-
 ul{
 	padding: 0;
 	list-style: none;
 }
-
 h1{
 	font-weight: 700;
 }
-
 img{
 	width: 70%;
 	border-radius: 15px;
 }
-
 a{
 	text-decoration: none;
 	font-size: 16px;
 }
-
 a.active{
 	border-bottom: 1px solid #fff;
 }
-
 a.center-align{
 	margin: 0 auto;
 }
@@ -69,6 +60,10 @@ a.center-align{
 .content p{
 	margin-bottom: 30px;
 }
+button{
+	border: none;
+	background-color: transparent;
+}
 .btn{
 	border: none;
 	background-color: transparent;
@@ -76,16 +71,13 @@ a.center-align{
 	padding: 10px 50px;
 	color: #fff;
 }
-
 .btn--more{
 	background-color: #5171ce;
 }
-
 .btn--more:hover{
 	background-color: rgb(108, 0, 248);
 	border-radius: 10px;
 }
-
 .btn--play{
     font-size: 16px;
     font-weight: 600;
@@ -168,6 +160,7 @@ header .container{
 
 .sub-games{
 	position: relative;
+	cursor: pointer;
 }
 
 .header__item a:hover{
@@ -245,7 +238,6 @@ main{
     max-width: 580px;
     margin: 0 auto;
 }
-
 .games__list{
     display: flex;
     flex-direction: row;
@@ -255,13 +247,11 @@ main{
     align-items: center;
 
 }
-
 .games__img{
 	width: 40%;
 	position: relative;
 	left: -3%;
 }
-
 .games__item{
     display: flex;
     align-items: center;
@@ -422,7 +412,7 @@ footer p{
 		left: -20px;
 	}
 	p {
-        font-size: 9px;
+        font-size: 8px;
     }
 	.games__list{
 		flex-direction: column;
