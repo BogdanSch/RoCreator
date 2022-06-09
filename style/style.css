@@ -50,7 +50,7 @@ a.active{
 	border-bottom: 1px solid #fff;
 }
 a.center-align{
-	margin: 0 auto;
+	margin: 10px auto;
 }
 .content{
 	max-width: 55%;
@@ -104,8 +104,17 @@ button{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-bottom: 90px;
-	margin-top: 90px;
+	margin: 130px auto;
+}
+p.hint{
+	font-family: 'Montserrat', sans-serif;
+	display: none;
+	position: absolute;
+	top: -20px;
+	z-index: 10000;
+	font-size: 18px;
+	font-weight: 700;
+    color: rgb(206, 206, 206);
 }
 /* width */
 ::-webkit-scrollbar {
@@ -203,7 +212,7 @@ main{
 /* Introducing - Start */
 
 .introducing{
-	margin-bottom: 60px;
+	margin-bottom: 69px;
 }
 
 .introducing__wrap{
@@ -386,6 +395,26 @@ footer p{
 .soc-link{
 	margin-left: 10px;
 }
+.soc-medias a{
+	width: 20%;
+}
+.soc-medias i{
+	color: #fff;
+	padding: 7px;
+	/* width: 32px; */
+	/* border: 1px solid #fff; */
+	/* border-radius: 40%; */
+	border-bottom: 1px solid #fff;
+	text-align: center;
+	position: relative;
+}
+.soc-medias i:hover{
+	color:rgb(236, 87, 18);
+	border-bottom: 1px solid rgb(236, 87, 18);
+}
+.soc-medias i:hover .hint{
+	display: block;
+}
 /* Footer - End */
 
 @media screen and (max-width: 499px){
@@ -399,7 +428,7 @@ footer p{
 		font-size: 12px;
 	}
 	.btn--play, .btn--more{
-		padding: 6px 30px;
+		padding: 4px 26px;
 	}	
 	.introduction{
 		flex-direction: column;
