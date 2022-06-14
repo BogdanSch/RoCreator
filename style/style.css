@@ -12,7 +12,7 @@ body{
 	overflow-x: hidden;
 }
 :root{
-	
+	--white-text: #fff;
 }
 .container{
 	max-width: 1200px;
@@ -50,7 +50,7 @@ a{
 	font-size: 16px;
 }
 a.active{
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid var(--white-text);
 }
 a.center-align{
 	margin: 10px auto;
@@ -72,7 +72,7 @@ button{
 	background-color: transparent;
 	border-radius: 20px;
 	padding: 10px 50px;
-	color: #fff;
+	color: var(--white-text);
 }
 .btn--more{
 	background-color: #5171ce;
@@ -84,7 +84,7 @@ button{
 .btn--play{
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
+    color: var(--white-text);
     text-decoration: none;
     background-color: #ffe600;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
@@ -113,11 +113,14 @@ p.hint{
 	font-family: 'Montserrat', sans-serif;
 	display: none;
 	position: absolute;
-	top: -20px;
+	top: -55px;
 	z-index: 10000;
 	font-size: 18px;
 	font-weight: 700;
-    color: rgb(206, 206, 206);
+    color: var(--white-text);
+	background-color: rgb(47, 0, 255);
+	border-radius: 10px;
+	padding: 4px 20px;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -154,7 +157,7 @@ header .container{
 }
 
 .header__wrap *{
-	color: #fff;
+	color: var(--white-text);
 	font-weight: 400;
 	font-size: 16px;
 	text-decoration: none;
@@ -195,13 +198,13 @@ header .container{
 }
 
 .header__lower__item{
-	color: #fff;
+	color: var(--white-text);
 	padding: 10px 10px;
 	text-align: center;
 }
 
 .header__lower__item:hover{
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid var(--white-text);
 }
 
 /*Header - End
@@ -390,7 +393,7 @@ footer{
 	align-items: center;
 }
 footer p{
-	color: #fff;
+	color: var(--white-text);
 	text-align: center;
 	padding: 0;
 	margin: 0;
@@ -404,7 +407,7 @@ footer p{
 	margin-left: 5px;
 }
 .soc-medias i{
-	color: #fff;
+	color: var(--white-text);
 	padding: 7px;
 	background-color: rgb(189, 189, 189);
 	border-radius: 50%;
@@ -417,7 +420,7 @@ footer p{
 }
 .soc-medias i:hover{
 	color:rgb(18, 138, 236);
-	border-bottom: 1px solid rgb(18, 138, 236);
+	border: 1px solid var(--white-text);
 }
 .soc-medias i:hover .hint{
 	display: block;
