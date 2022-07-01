@@ -1,6 +1,5 @@
 const allLinks = document.querySelectorAll("button.unfinished");
 
-
 allLinks.forEach(
     (element, key) =>{
         element.addEventListener("click", (e) =>{
@@ -11,14 +10,10 @@ allLinks.forEach(
     }
 );
 
-// document.body.addEventListener('click', (e) => {
-//     const subList = document.querySelector('.header__lower__list');
-//     subList.style.cssText = 'display: none;';
-// });
+$(document).ready(function(){
+    $('.header__burger').click(function(event){
+        $('.header__burger, .header__list').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+});
 
-// const buttonSubList = document.querySelector('.sub-games') 
-
-// buttonSubList.addEventListener('click', (e) => {
-//     const subList = document.querySelector('.header__lower__list');
-//     subList.style.cssText = 'display: block;';
-// });
