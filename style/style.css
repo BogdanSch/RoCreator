@@ -6,7 +6,9 @@
 	box-sizing: border-box;
 	transition: all 0.5s ease;
 }
-
+html{
+	scroll-behavior: smooth;
+}
 body{
 	font-family: 'Montserrat', sans-serif;
 	overflow-x: hidden;
