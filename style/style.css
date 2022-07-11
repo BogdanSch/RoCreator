@@ -421,8 +421,7 @@ footer p{
 	align-items: center;
 }
 .soc-medias i:hover{
-	color:rgb(18, 138, 236);
-	border: 1px solid var(--white-text);
+	color:var(--accent);
 }
 .soc-medias i:hover .hint{
 	display: block;
@@ -509,7 +508,7 @@ footer p{
 	}
 	/* Burger menu - End */
 	h1{
-		font-size: 18px;
+		font-size: 20px;
 	}
 	h2{
 		font-size: 18px;
@@ -524,13 +523,12 @@ footer p{
 	.introduction{
 		flex-direction: column;
 	}
-	.games__img{
+	.games__img, .software__img{
 		width: 50%;
 		left: -10%;
 	}
-	.software__img{
-		width: 50%;
-		left: -10%;
+	.games__item, .software__item{
+		width: 60%;
 	}
 	.bg--img{
 		width: 140% !important;
@@ -539,15 +537,12 @@ footer p{
 	p {
         font-size: 9px;
     }
-	.type{
-		font-size: 9px;
-		margin-bottom: 2%;
-	}
-	.games__list{
+	.games__list, .software__list{
 		flex-direction: column;
+		justify-content: center;
 	}
-	.software__list{
-		flex-direction: column;
+	.games__item, .software__item{
+		margin: 75px 0 85px 0;
 	}
 	.introducing .content{
 		max-width: 50%;
@@ -560,8 +555,11 @@ footer p{
 		width: 24px;
 		height: 24px;
 	}
+	.type{
+		font-size: 9px;
+		margin-bottom: 10%;
+	}
 }
-
 @media screen and (min-width: 500px) and (max-width: 770px) {
     p {
         font-size: 12px;
@@ -579,25 +577,16 @@ footer p{
 		margin-bottom: 350px;
 		margin-top: 350px;
 	}
-	.games__list{
+	.games__list, .software__list{
 		flex-direction: column;
+		justify-content: center;
 	}
-	.games__img{
+	.games__img, .software__img{
 		width: 55%;
 		left: -10%;
 	}
-	.games__item{
-		margin: 50px;
-	}
-	.software__list{
-		flex-direction: column;
-	}
-	.software__item{
-		margin: 0;
-	}
-	.software__img{
-		width: 55%;
-		left: -10%;
+	.games__item, .software__item{
+		margin: 60px 0 70px 0;
 	}
 	h1{
 		font-size: 30px;
@@ -610,6 +599,6 @@ footer p{
 	}
 	.type{
 		font-size: 12px;
-		margin-bottom: 2%;
+		margin-bottom: 5%;
 	}
 }
