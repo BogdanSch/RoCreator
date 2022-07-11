@@ -1,6 +1,5 @@
 /*General - Start*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap');
 
 *{
 	box-sizing: border-box;
@@ -11,13 +10,18 @@ html{
 }
 body{
 	font-family: 'Montserrat', sans-serif;
-	overflow-x: hidden;
+}
+.wrapper{
+	overflow: hidden;
 }
 body.lock{
 	overflow: hidden;
 }
 :root{
 	--white-text: #fff;
+	--introduce-bg: #F6F6F6;
+	--text-color: #4B5D68;
+	--accent: rgb(25, 0, 255);
 }
 .container{
 	max-width: 1200px;
@@ -35,7 +39,7 @@ h5{
 	text-align: center;
 }
 p{
-    color: #4B5D68;
+    color: var(--text-color);
     line-height: 160%;
     font-size: 16px;
 }
@@ -109,6 +113,12 @@ button{
 	width: 40%;
 	align-self: center;
 }
+.bg--img{
+    position: absolute;
+    left: 115px;
+    z-index: -1;
+	width: 71%;
+}
 .introduction{
 	display: flex;
 	flex-direction: row;
@@ -128,18 +138,24 @@ p.hint{
 	border-radius: 10px;
 	padding: 4px 20px;
 }
-/* width */
+.type{
+	font-size: 16px;
+	color: var(--text-color);
+	margin-bottom: 3%;
+}
+.type span{
+	color: var(--accent);
+	font-weight: 500;
+}
 ::-webkit-scrollbar {
 	width: 7px;
 	background-color: rgb(224, 224, 224);
 }
-
 ::-webkit-scrollbar-thumb {
 	background: rgb(143, 143, 143);
 	border-radius: 50px;
 }
 /*General - End*/
-
 header{
 	background-color: #555;
 	width: 100%;
@@ -150,18 +166,15 @@ header{
 	display: flex;
 	align-items: center;
 }
-
 header .container{
 	width: 100%;
 }
-
 .header__wrap{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 }
-
 .header__wrap *{
 	color: var(--white-text);
 	font-weight: 400;
@@ -213,19 +226,27 @@ header .container{
 main{
 	margin-top: 70px;
 }
-
 /* Introducing - Start */
 
 .introducing{
 	margin-bottom: 69px;
+	position: relative;
 }
-
+.introducing::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 135%;
+	background-color: var(--introduce-bg);
+	position: absolute;
+	z-index: -1;
+	top: -10%;
+}
 .introducing__wrap{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
-
 .introducing .content {
 	max-width: 40%;
 }
@@ -240,7 +261,9 @@ main{
 .about{
 	margin-top: 50px;
 }
-
+.about__img{
+	width: 40%;
+}
 /* About - End */
 
 /* Games - Start */
@@ -293,13 +316,6 @@ main{
     box-shadow: none;
 }
 
-.games__item .bg--img{
-    position: absolute;
-    left: 115px;
-    z-index: -1;
-	width: 71%;
-}
-
 /* Games - End */
 
 /* Software - Start */
@@ -349,12 +365,6 @@ main{
     background-color: transparent;
     border: none;
     box-shadow: none;
-}
-.software__item .bg--img{
-    position: absolute;
-    left: 115px;
-    z-index: -1;
-	width: 71%;
 }
 
 /* Software - End */
@@ -505,10 +515,11 @@ footer p{
 		font-size: 18px;
 	}
 	h5{
-		font-size: 12px;
+		font-size: 14px;
 	}
 	.btn--play, .btn--more{
 		padding: 4px 22px;
+		font-size: 12px;
 	}	
 	.introduction{
 		flex-direction: column;
@@ -517,21 +528,21 @@ footer p{
 		width: 50%;
 		left: -10%;
 	}
-	.games__item .bg--img{
-		width: 140%;
-		left: -20px;
-	}
 	.software__img{
 		width: 50%;
 		left: -10%;
 	}
-	.software__item .bg--img{
-		width: 140%;
-		left: -20px;
+	.bg--img{
+		width: 140% !important;
+		left: -20px !important;
 	}
 	p {
         font-size: 9px;
     }
+	.type{
+		font-size: 9px;
+		margin-bottom: 2%;
+	}
 	.games__list{
 		flex-direction: column;
 	}
@@ -561,6 +572,13 @@ footer p{
 	.introducing .content{
 		max-width: 50%;
 	}
+	.bg--img{
+		position: absolute;
+		width: 110% !important;
+		left: 10% !important;
+		margin-bottom: 350px;
+		margin-top: 350px;
+	}
 	.games__list{
 		flex-direction: column;
 	}
@@ -568,24 +586,18 @@ footer p{
 		width: 55%;
 		left: -10%;
 	}
-	.games__item .bg--img{
-		width: 105%;
-		left: 30px;
-		margin-bottom: 350px;
-		margin-top: 350px;
+	.games__item{
+		margin: 50px;
 	}
 	.software__list{
 		flex-direction: column;
 	}
+	.software__item{
+		margin: 0;
+	}
 	.software__img{
 		width: 55%;
 		left: -10%;
-	}
-	.software__item .bg--img{
-		width: 105%;
-		left: 30px;
-		margin-bottom: 350px;
-		margin-top: 350px;
 	}
 	h1{
 		font-size: 30px;
@@ -595,5 +607,9 @@ footer p{
 	}
 	.software__introduction img{
 		width: 40%;
+	}
+	.type{
+		font-size: 12px;
+		margin-bottom: 2%;
 	}
 }
