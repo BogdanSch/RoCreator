@@ -10,6 +10,7 @@ html{
 }
 body{
 	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
 }
 .wrapper{
 	overflow: hidden;
