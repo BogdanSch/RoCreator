@@ -175,7 +175,14 @@ p.hint{
 	top: 5%;
 	left: 0;
 }
-/*General - End*/
+img.dots{
+	position: absolute;
+	width: 10%;
+	right: 0;
+	top: 100%;
+	border-radius: 0px;
+}
+/* General - End */
 /* Header - Start */
 header{
 	background-color: #555;
@@ -377,8 +384,7 @@ main{
 }
 
 /* Software - End */
-/*Main - End*/
-
+/* Main - End */
 /* Footer - Start */
 
 footer{
