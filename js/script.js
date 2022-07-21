@@ -1,3 +1,4 @@
+//Not available games
 const allLinks = document.querySelectorAll("button.unfinished");
 
 allLinks.forEach(
@@ -10,6 +11,7 @@ allLinks.forEach(
     }
 );
 
+//Burger menu
 $(document).ready(function(){
     $('.header__burger').click(function(event){
         $('.header__burger, .header__list').toggleClass('active');
